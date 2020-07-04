@@ -7,7 +7,6 @@ def mrtest(n):
     y=3
     i=0
     tmp=0
-    flag=0
 
     if(n>2 and n%2==0):
         return False
@@ -15,7 +14,6 @@ def mrtest(n):
     while y&1 == 0:
         p = pow(2,x)*y
         if(p == n-1 and x>=0 and y&1 == 1):
-            flag = 1
             break
         x+=1
         y>>1
